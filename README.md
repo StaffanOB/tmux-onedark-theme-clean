@@ -1,15 +1,18 @@
-# tmux-onedark-theme
-A dark tmux color scheme for terminal that support [True Color](https://en.wikipedia.org/wiki/Color_depth#True_color_.2824-bit.29), based on [onedark.vim](https://github.com/joshdick/onedark.vim), which is inspired by [One Dark syntax theme](https://github.com/atom/one-dark-syntax) for the [Atom text editor](https://atom.io).
+# tmux-onedark-theme-clean
+A dark tmux color scheme for terminal that support [True Color](https://en.wikipedia.org/wiki/Color_depth#True_color_.2824-bit.29),
+based on [onedark.vim](https://github.com/joshdick/onedark.vim), which is inspired by [One Dark syntax theme](https://github.com/atom/one-dark-syntax) for the 
+[Atom text editor](https://atom.io).
 
 ## Why?
 
-I wanted both vim and tmux to share the same color scheme.
-I tried [tmuxline.vim](https://github.com/edkolev/tmuxline.vim) but it didn't render the colors correctly.
-Furthermore, with `tmuxline.vim`, you can't control the widgets on right status bar, which is a key feature IMO.
+I wanted both vim and tmux to share the same color scheme.  I tried
+[tmuxline.vim](https://github.com/edkolev/tmuxline.vim) but it didn't render
+the colors correctly.  Furthermore, with `tmuxline.vim`, you can't control the
+widgets on right status bar, which is a key feature IMO.
 
-A picture of my terminal with *@onedark_widgets* set to "*#{package_updates} #{free_mem}*".  
-These widgets are available in [tmux-status-variables](https://github.com/odedlaz/tmux-status-variables).
-![tmux-onedark-theme Preview](https://raw.githubusercontent.com/odedlaz/tmux-onedark-theme/master/preview-terminal.png)
+A picture of my terminal with *@onedark_widgets* set to "*#{package_updates}
+#{free_mem}*".  These widgets are available in [tmux-status-variables](https://github.com/odedlaz/tmux-status-variables).
+![tmux-onedark-theme
 
 ### Set Options
 
@@ -91,19 +94,6 @@ $ tmux source-file ~/.tmux.conf
 
 ## Issues
 
-### Symbols are missing
-
-   The theme requires Powerline symbols exist and set on your system. Follow [these instructions](https://github.com/powerline/fonts) to install them, then update your terminal fonts to use them.
-
-### Symbols are corrupted
-
-   Patched Powerline fonts aren't picked up when `$LANG` isn't set to `en_US`.  
-   You can change the default locale settings at `/etc/default/locale`.
-
-   
-### Widgets not working
-
-   Make sure that you put the `set -g @plugin 'odedlaz/tmux-onedark-theme'` before other scripts that alter the status line, or they won't be able to pickup the plugin's changes.
 
 ### True Color
 
